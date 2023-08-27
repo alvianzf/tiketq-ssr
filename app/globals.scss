@@ -1,0 +1,124 @@
+$primary: #4267B2;
+$secondary: #FF5A00;
+$light: #fff;
+$dark: #000;
+
+.primary {
+    background: $primary !important;
+    color: $light !important;
+}
+
+.secondary {
+    background: $secondary !important;
+    color: $light !important;
+}
+
+.dark {
+    background: $dark !important;
+    color: $light !important;
+}
+
+.light {
+    background: $light !important;
+    color: $primary !important;
+}
+
+.btn-light {
+    background: $light !important;
+    color: $primary !important;
+}
+
+.navbar {
+    width: 80%;
+    padding: 0.5em 1.5em 1em !important;
+    background: $primary !important;
+    border-radius: 0 0 3.5em 3.5em;
+    margin: auto;
+}
+
+.level-right {
+    .nav-logo {
+        max-width: 100px !important;
+        cursor: pointer;
+    }
+}
+
+body {
+    background: url('./assets/beach.png') !important;
+}
+
+.search-flight {
+    margin: 10em auto 0;
+    max-width: 70%;
+    background: $light;
+    border-radius: 3.75rem;
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.16);
+    backdrop-filter: blur(7px);
+    padding: 1em;
+}
+
+.search {
+    padding: 0;
+    border-bottom: 0.5px solid $primary;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    font-size: large;
+    text-align: right;
+    color: $primary;
+    opacity: 0.7;
+    width: 100%;
+
+    &:focus {
+        outline: none;
+        border-bottom: 1px solid $secondary;
+    }
+}
+
+.form-item {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    color: $primary;
+    font-weight: bold;
+    padding: 0 1em;
+    border-right: 1px solid $primary;
+
+    &:last-child {
+        border-right: none;
+    }
+}
+
+.search:focus + .search-items {
+    display: block !important;
+    
+}
+
+.search-items {
+    display: none;
+    top: 5em;
+    left: 0;
+    position: absolute;
+    background: $light;
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.16));
+    backdrop-filter: blur(7px);
+    width: 20vw;
+    max-height: 20em;
+    overflow-y: scroll;
+    
+    &:last-child {
+        border-radius: 0 0 3em 3em;
+    }
+}
+
+.search-items-list {
+    padding: 1em;
+    &:hover {
+        background: $secondary;
+    }
+
+    &:last-child {
+        border-radius: 0 0 3em 3em;
+    }
+}
