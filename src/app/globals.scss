@@ -1,0 +1,28 @@
+@import '../../node_modules/bulma/bulma.sass';
+
+// Variable declarations 
+$primary: #4267B2;
+$secondary: #FF5A00CF;
+$dark: #000;
+$light: #fff;
+
+.primary {
+    background: $primary;
+    color: $light;
+}
+
+.secondary {
+    background: $secondary;
+    color: $light;
+}
+
+.dark {
+    background: $dark;
+    color: $light;
+}
+
+.light {
+    background: $light;
+    color: $primary;
+    border: 1px solid $primary;
+}
